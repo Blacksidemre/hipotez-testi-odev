@@ -1,38 +1,23 @@
-Bu projede, Overwatch 2 adlı çevrimiçi çok oyunculu oyunun eşleşme sisteminin adil olup olmadığını, yani kazanma ve kaybetme oranlarının %50 düzeyinde gerçekleşip gerçekleşmediğini test etmek amacıyla tek örnek oran testi uygulanmıştır.
+Bu proje, Overwatch 2 adlı çevrimiçi çok oyunculu oyunun eşleşme sisteminin adil olup olmadığını test etmeyi amaçlamaktadır. Test, oyuncuların kazanma ve kaybetme oranlarının istatistiksel olarak %50’ye yakın olup olmadığını incelemektedir.
 
-Hipotezler
-H0 (Yokluk Hipotezi): Oyunda kazanma oranı %50’dir, yani kazanma ve kaybetme oranları arasında anlamlı bir fark yoktur.
-
+Hipotezler:
+H0 (Null Hipotez): Oyunda kazanma oranı %50’dir; kazanma ve kaybetme oranları arasında anlamlı bir fark yoktur.
 H1 (Alternatif Hipotez): Kazanma ve kaybetme oranları arasında anlamlı bir fark vardır.
 
-Veri
-Son 30 oyun sonucu kayıt altına alındı.
+Veri:
+Analiz için son 30 oyun gözlemlenmiştir.
+Kazanma: 17 oyun
+Kaybetme: 13 oyun
+Veriler, oyun içi kayıtlar ve 3 gün boyunca yapılan gözlemlerle, oyun saatleri sabitlenerek toplanmıştır.
 
-Kazanma: 17
-
-Kaybetme: 13
-
-Veriler oyun içi kayıtlar ve gözlemlerle 3 gün boyunca toplanmış, oyun saatleri sabitlenerek veri kalitesi artırılmıştır.
-
-Yöntem
+Yöntem:
 Tek örnek oran testi uygulanmıştır.
+Örneklem oranı: p = 17/30 = 0.566
+Varsayılan kazanma oranı: P0 = 0.50
+Hesaplanan Z değeri: Z = 0.722
 
-Hesaplamalarda örneklem oranı p = 17/30 = 0.566 kullanılmıştır.
+Sonuç:
+Z değeri, %95 güven düzeyinde kritik değer (±1.96) içinde kaldığı için H0 reddedilememiştir. Bu sonuç, Overwatch 2 eşleşme sisteminin istatistiksel olarak dengeli olduğunu göstermektedir.
 
-Varsayılan kazanma oranı P₀ = 0.50 alınmıştır.
-
-Z değeri: 0.722 olarak hesaplanmıştır.
-
-Sonuç
-Z değeri, %95 güven düzeyinde kritik değerin (±1.96) içinde kaldığı için H0 reddedilememiştir.
-Yani, Overwatch 2’de eşleşme sisteminin istatistiksel olarak dengeli olduğu sonucuna ulaşılmıştır.
-
-Yorum
-Sonuçlar, kazanma ve kaybetmenin büyük ölçüde şansa ve rastgele eşleşmelere bağlı olduğunu; sistemin belirgin bir şekilde adaletsiz olmadığını göstermektedir.
-
-Ekler
-Oyun içi ekran görüntüleri
-
-Manuel oluşturulmuş grafik
-
-Excel çalışmaları
+Yorum:
+Kazanma ve kaybetme sonuçları büyük ölçüde şansa ve rastgele eşleşmelere bağlıdır. Sistem belirgin bir şekilde adaletsiz değildir.
